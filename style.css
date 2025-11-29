@@ -271,3 +271,24 @@ body {
     border-color: #4af3ff;
 }
 
+/* FUTURISTIC FOOTER */
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    background: rgba(10, 14, 25, 0.55);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0, 255, 255, 0.18);
+    color: #cfeeff;
+    font-size: 0.95rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #8cdcff;
+    transition: 0.2s;
+}
+
+.footer-links a:hover {
+    color: #4af3ff;
+}
