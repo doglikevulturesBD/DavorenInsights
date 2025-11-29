@@ -463,27 +463,7 @@ body {
     margin-top: 30px;
 }
 
-/* BLOG HERO HEADER */
-.blog-hero {
-    text-align: center;
-    margin: 50px auto 40px;
-    padding: 40px 20px;
-    max-width: 900px;
-    background: rgba(20, 28, 48, 0.55);
-    border-radius: 18px;
-    border: 1px solid rgba(0,255,255,0.12);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 0 30px rgba(0,255,255,0.1);
-}
-
-.blog-hero h1 {
-    font-size: 2.8rem;
-    background: linear-gradient(90deg, #00eaff, #8d6bff, #ff4bf1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 10px;
-}
-/* BLOG HERO PARTICLE BACKGROUND */
+/* BLOG HERO SECTION (FINAL CLEAN VERSION) */
 .blog-hero {
     position: relative;
     width: 100%;
@@ -496,73 +476,11 @@ body {
     border: 1px solid rgba(0,255,255,0.12);
     backdrop-filter: blur(8px);
     box-shadow: 0 0 30px rgba(0,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* TEXT LAYER */
-.blog-hero-content {
-    position: relative;
-    z-index: 5;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-/* PARTICLE LAYERS */
-.blog-particles {
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.blog-particles::before,
-.blog-particles::after {
-    content: "";
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    background-image:
-        radial-gradient(circle, rgba(0,255,255,0.22) 2px, transparent 2px),
-        radial-gradient(circle, rgba(140,80,255,0.22) 2px, transparent 2px),
-        radial-gradient(circle, rgba(255,80,200,0.22) 2px, transparent 2px);
-    background-size: 140px 140px;
-    animation: blogParticleDrift 25s linear infinite;
-    opacity: 0.35;
-    filter: blur(1px);
-}
-
-.blog-particles::after {
-    animation-duration: 35s;
-    opacity: 0.25;
-}
-
-/* GLOW LAYER */
-.blog-hero-glow {
-    position: absolute;
-    width: 150%;
-    height: 150%;
-    left: 0;
-    top: 0;
-    background: radial-gradient(circle at 50% 50%,
-        rgba(0, 255, 255, 0.25),
-        rgba(140, 70, 255, 0.18),
-        rgba(0, 0, 0, 0.85)
-    );
-    filter: blur(60px);
-    animation: heroPulse 7s ease-in-out infinite alternate;
-    z-index: 0;
-}
-
-/* PARTICLE MOVEMENT */
-@keyframes blogParticleDrift {
-    0% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(-12%, -12%) scale(1.05); }
-    100% { transform: translate(-20%, -20%) scale(1); }
-}
-
-.blog-hero p {
-    font-size: 1.2rem;
-    opacity: 0.85;
-}
 
 /* BLOG CARD CONTAINER */
 .blog-container {
