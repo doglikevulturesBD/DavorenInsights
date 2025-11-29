@@ -228,3 +228,46 @@ body {
 .tile p {
     opacity: 0.75;
 }
+
+/* PAGE SECTION STYLE */
+.page-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.page-section h1 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #00eaff, #8d6bff, #ff4bf1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-section p {
+    line-height: 1.7;
+    opacity: 0.85;
+    margin-bottom: 20px;
+}
+
+/* BLOG CARDS */
+.blog-list {
+    display: grid;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.blog-card {
+    background: rgba(15, 20, 35, 0.55);
+    border: 1px solid rgba(0,255,255,0.15);
+    padding: 20px;
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    transition: 0.25s;
+}
+
+.blog-card:hover {
+    transform: translateY(-6px);
+    border-color: #4af3ff;
+}
+
