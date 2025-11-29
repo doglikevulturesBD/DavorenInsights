@@ -651,6 +651,34 @@ body {
     color: #00eaff;
 }
 
+/* ARTICLE NAV BAR */
+.article-nav {
+    width: 100%;
+    padding: 15px 25px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 10;
+}
+
+.article-nav a {
+    color: #00eaff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border: 1px solid rgba(0,255,255,0.25);
+    padding: 8px 16px;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    background: rgba(20, 28, 48, 0.45);
+    transition: 0.25s ease;
+}
+
+.article-nav a:hover {
+    background: rgba(0,255,255,0.12);
+    box-shadow: 0 0 15px rgba(0,255,255,0.3);
+    transform: translateX(-4px);
+}
 
 
 /* FUTURISTIC FOOTER */
