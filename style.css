@@ -102,6 +102,82 @@ body {
     animation: glowPulse 7s ease-in-out infinite alternate;
 }
 
+/* SUB-HERO FOR ABOUT PAGE */
+.sub-hero {
+    position: relative;
+    height: 32vh; /* smaller than main hero */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+/* GLOW BACKGROUND */
+.sub-hero-glow {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle at 50% 50%,
+        rgba(0, 255, 255, 0.25),
+        rgba(140, 70, 255, 0.18),
+        rgba(0, 0, 0, 0.85)
+    );
+    filter: blur(60px);
+    animation: heroPulse 6s ease-in-out infinite alternate;
+    z-index: -2;
+}
+
+/* PARTICLES (COPIED FROM MAIN HERO BUT LIGHTER) */
+.sub-particles {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.sub-particles::before,
+.sub-particles::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-image:
+        radial-gradient(circle, rgba(0,255,255,0.22) 2px, transparent 2px),
+        radial-gradient(circle, rgba(140,80,255,0.22) 2px, transparent 2px),
+        radial-gradient(circle, rgba(255,80,200,0.22) 2px, transparent 2px);
+    background-size: 120px 120px;
+    animation: floatParticles 22s linear infinite;
+    opacity: 0.35;
+    filter: blur(1px);
+}
+
+.sub-particles::after {
+    animation-duration: 30s;
+    opacity: 0.25;
+}
+
+/* TEXT CONTENT */
+.sub-hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 5;
+}
+
+.sub-hero-content h1 {
+    font-size: 2.8rem;
+    background: linear-gradient(90deg, #00eaff, #8d6bff, #ff4bf1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+}
+
+.sub-hero-content p {
+    opacity: 0.85;
+    font-size: 1.15rem;
+}
+
+
 /* GLOW PULSE */
 @keyframes glowPulse {
     0% { opacity: 0.55; transform: translateX(-50%) scale(1); }
