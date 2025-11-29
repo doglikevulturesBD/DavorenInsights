@@ -11,6 +11,7 @@ body {
     background: #05060d;
     color: #e5f4ff;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /* HOLOGRAPHIC BACKGROUND GRID */
