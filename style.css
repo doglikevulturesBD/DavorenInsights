@@ -24,6 +24,34 @@ body {
     z-index: -1;
 }
 
+/* NAVIGATION BAR */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 18px 0;
+    background: rgba(10, 14, 25, 0.55);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.18);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar a {
+    color: #cfeeff;
+    text-decoration: none;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    color: #4af3ff;
+}
+
+
 /* FUTURISTIC HERO SECTION */
 .hero {
     position: relative;
