@@ -27,7 +27,7 @@ body {
 /* FUTURISTIC HERO SECTION */
 .hero {
     position: relative;
-    height: 45vh;
+    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
