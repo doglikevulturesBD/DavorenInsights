@@ -104,13 +104,14 @@ body {
 
 /* SUB-HERO FOR ABOUT PAGE */
 .sub-hero {
+    width: 100%;
     position: relative;
-    height: 32vh; /* smaller than main hero */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin-bottom: 40px;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+
 }
 
 /* GLOW BACKGROUND */
