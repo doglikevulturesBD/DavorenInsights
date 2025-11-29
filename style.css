@@ -50,6 +50,37 @@ body {
     z-index: -2;
 }
 
+/* BOTTOM SOFT NEON GLOW UNDER HERO */
+.hero-bottom-glow {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 120px;
+
+    background: radial-gradient(
+        ellipse at center,
+        rgba(0, 255, 255, 0.28) 0%,
+        rgba(120, 50, 255, 0.22) 20%,
+        rgba(255, 80, 200, 0.18) 40%,
+        rgba(0, 0, 0, 0) 80%
+    );
+
+    filter: blur(35px);
+    opacity: 0.7;
+    z-index: -1;
+    pointer-events: none;
+    animation: glowPulse 7s ease-in-out infinite alternate;
+}
+
+/* GLOW PULSE */
+@keyframes glowPulse {
+    0% { opacity: 0.55; transform: translateX(-50%) scale(1); }
+    100% { opacity: 0.88; transform: translateX(-50%) scale(1.15); }
+}
+
+
 /* FLOATING PARTICLES */
 .particles {
     position: absolute;
